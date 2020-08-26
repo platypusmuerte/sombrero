@@ -11,19 +11,18 @@ if _TEST then
 	ITEMTHEATERDATAPAD = 2
 end
 
---jediProgressionType = VILLAGEJEDIPROGRESSION
-jediProgressionType = HOLOGRINDJEDIPROGRESSION
+jediProgressionType = CUSTOMJEDIPROGRESSION
 
 jediManagerName = "JediManager"
 
 customJediProgressionFile = "scripts/managers/jedi/custom_jedi_manager.lua"
 
 function printf(...) io.write(string.format(table.unpack({...}))) end
--- was set to NOJEDIPROGRESSION
+
 JediManager = ScreenPlay:new {
 	screenplayName = jediManagerName,
 	jediManagerName = jediManagerName,
-	jediProgressionType = HOLOGRINDJEDIPROGRESSION,
+	jediProgressionType = CUSTOMJEDIPROGRESSION,
 }
 
 -- Default handling of the start event.
@@ -79,7 +78,7 @@ end
 --Check to ensure force skill prerequisites are maintained
 function JediManager:canSurrenderSkill(pPlayer, skillName)
 	-- Default behaviour for the canSurrenderSkill check, return true.
-	return true
+	return false
 end
 
 function JediManager:onFSTreeCompleted(pCreatureObject, branch)
