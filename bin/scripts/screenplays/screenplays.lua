@@ -663,6 +663,19 @@ includeFile("space/space_chassis_dealer_conv_handler.lua")
 --Record Keepers
 includeFile("record_keepers/record_keepers.lua")
 
+--[[
+  Sombrero screenplays
+]]
+
+includeFile("sombrero/forcecheck_conv_handler.lua")
+includeFile("sombrero/forcecheck_screenplay.lua")
+includeFile("sombrero/bhvendor_conv_handler.lua")
+includeFile("sombrero/bhvendor_screenplay.lua")
+includeFile("sombrero/smugglervendor_conv_handler.lua")
+includeFile("sombrero/smugglervendor_screenplay.lua")
+includeFile("sombrero/buffvendor_conv_handler.lua")
+includeFile("sombrero/buffvendor_screenplay.lua")
+
 --Tests
 includeFile("tests/tests.lua")
 

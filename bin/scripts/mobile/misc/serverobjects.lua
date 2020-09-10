@@ -52,3 +52,10 @@ includeFile("misc/record_keeper_rebel.lua")
 includeFile("misc/seeker.lua")
 includeFile("misc/sullustan_male.lua")
 includeFile("misc/trials_gungan_captain.lua")
+
+-- sombrero mobiles here
+includeFile("misc/testmobile.lua")
+includeFile("misc/sombrero_forcecheck.lua")
+includeFile("misc/sombrero_bhvendor.lua")
+includeFile("misc/sombrero_smugglervendor.lua")
+includeFile("misc/sombrero_buffvendor.lua")

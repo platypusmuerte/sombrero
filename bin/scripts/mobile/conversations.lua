@@ -294,3 +294,10 @@ includeFile("conversations/junk_dealer/junk_dealer_quich_conv.lua")
 includeFile("conversations/junk_dealer/junk_dealer_reggi_conv.lua")
 includeFile("conversations/junk_dealer/junk_dealer_sheani_conv.lua")
 includeFile("conversations/junk_dealer/junk_dealer_sneg_conv.lua")
+
+-- custom mobile conversations
+includeFile("conversations/sombrero/test_conv.lua")
+includeFile("conversations/sombrero/forcecheck_conv.lua")
+includeFile("conversations/sombrero/bhvendor_conv.lua")
+includeFile("conversations/sombrero/smugglervendor_conv.lua")
+includeFile("conversations/sombrero/buffvendor_conv.lua")

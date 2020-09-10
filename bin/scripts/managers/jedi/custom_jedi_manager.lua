@@ -174,7 +174,7 @@ end
 
 -- Is jedi pop capped?
 function CustomJediManager:isPopCapped(pCreatureObject)
-	local body, c, h = http.request("http://swgemu.platypusmuerte.com/jediok.php")
+	local body, c, h = http.request("http://swgemu.platypusmuerte.com/jq.php?getpop=1")
 
 	if body == "yes" then
 		self:jediPopCapped(pCreatureObject)
