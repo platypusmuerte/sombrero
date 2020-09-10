@@ -27,7 +27,7 @@ buffvendor_conv:addScreen(supplies_1)
 
 get_buffs_1 = ConvoScreen:new {
   id = "get_buffs_1",
-  customDialogText = "I can channel the powers of the Force to temporarily enhance you, but to do this, comes at a cost. 8000 credits to be precise.",
+  customDialogText = "I can channel the powers of the Force to temporarily enhance you, but to do this, comes at a cost. 10000 credits to be precise.",
   stopConversation = "false",
   options = {
     {"I'll pay whatever you're asking!","accept_buffs"},

@@ -1,6 +1,6 @@
 local http = require("socket.http")
 buffvendor_conv_handler = Object:new {
-  cost = 8000
+  cost = 10000
 }
 
 function buffvendor_conv_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
