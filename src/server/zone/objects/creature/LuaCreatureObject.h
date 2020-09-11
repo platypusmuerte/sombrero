@@ -113,6 +113,7 @@ namespace creature {
 		int healDamage(lua_State* L);
 		int getGroupID(lua_State* L);
 		int enhanceCharacter(lua_State* L);
+		int enhanceCharacterViaBot(lua_State* L);
 		int setWounds(lua_State* L);
 		int setShockWounds(lua_State* L);
 		int getForceSensitiveSkillCount(lua_State* L);
