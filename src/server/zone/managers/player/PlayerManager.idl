@@ -513,6 +513,13 @@ class PlayerManager extends Observer implements Logger {
 	public native void enhanceCharacter(CreatureObject player);
 
 	/**
+	 * Enhances the target character with doc or dance or music buffs
+	 * @pre { player is locked }
+	 * @post { player is locked }
+	 */
+	public native void enhanceCharacterViaBot(CreatureObject player, int buffReq);
+
+	/**
 	 * Creates and adds buff to Player
 	 * @pre { player is locked }
 	 * @post { player is locked }

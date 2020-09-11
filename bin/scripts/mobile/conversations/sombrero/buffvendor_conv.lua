@@ -25,17 +25,6 @@ supplies_1 = ConvoScreen:new {
 }
 buffvendor_conv:addScreen(supplies_1)
 
-get_buffs_1 = ConvoScreen:new {
-  id = "get_buffs_1",
-  customDialogText = "I can channel the powers of the Force to temporarily enhance you, but to do this, comes at a cost. 10000 credits to be precise.",
-  stopConversation = "false",
-  options = {
-    {"I'll pay whatever you're asking!","accept_buffs"},
-    {"Woa, thats a bit steep. Maybe not.","decline_buffs"}
-  }
-}
-buffvendor_conv:addScreen(get_buffs_1)
-
 nsf_buffs= ConvoScreen:new {
   id = "nsf_buffs",
   customDialogText = "Do not toy with my powers. Pay, or else.",
@@ -44,17 +33,41 @@ nsf_buffs= ConvoScreen:new {
 }
 buffvendor_conv:addScreen(nsf_buffs)
 
-accept_buffs = ConvoScreen:new {
-  id = "accept_buffs",
+accept_buffs_music = ConvoScreen:new {
+  id = "accept_buffs_music",
   customDialogText = "Rat tailed Jimmy is a second hand hood. He's the one they call Dr. Feelgood. He's the one that makes ya feel alright",
   stopConversation = "true",
   options = {}
 }
-buffvendor_conv:addScreen(accept_buffs)
+buffvendor_conv:addScreen(accept_buffs_music)
+
+accept_buffs_dance = ConvoScreen:new {
+  id = "accept_buffs_dance",
+  customDialogText = "You spin me right round baby, right round, like a disco droid baby, right round.",
+  stopConversation = "true",
+  options = {}
+}
+buffvendor_conv:addScreen(accept_buffs_dance)
+
+accept_buffs_medical = ConvoScreen:new {
+  id = "accept_buffs_medical",
+  customDialogText = "...not to be indelicate but in my profession; if you've seen one, you've see them all",
+  stopConversation = "true",
+  options = {}
+}
+buffvendor_conv:addScreen(accept_buffs_medical)
+
+accept_cleanse = ConvoScreen:new {
+  id = "accept_cleanse",
+  customDialogText = "Handcrafted soap is the best. No lye.",
+  stopConversation = "true",
+  options = {}
+}
+buffvendor_conv:addScreen(accept_cleanse)
 
 decline_buffs = ConvoScreen:new {
   id = "decline_buffs",
-  customDialogText = "Fine, go talk to that Whilins guy then, see if I care.",
+  customDialogText = "Fine, go talk to that Whilins guy or those hippies in the cantina then, see if I care.",
   stopConversation = "true",
   options = {}
 }
